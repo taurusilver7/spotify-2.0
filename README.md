@@ -1,12 +1,12 @@
 # Spotify 2.0
 
-A streaming and media service provider powered by next js. for playlist creation and playback functionality.
+A streaming and media service providing application powered by next js. v.12 for playlist creation and playback functionality.git 
 
 > Spotify API for fetching playlists from the genuine article and control music playback
 > Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)
 > tailwind css for a responsive UI styling.
-> Next.js v.12.0.0 middleware to handle authenticated user access
-> Recoil instead of Redux for state management (when switching playlists and songs)
+> Next.js v.12.0.0 middleware to handle authenticated user access.
+> Recoil instead of Redux for state management. (when switching playlists and songs)
 
 # Next.js + Tailwind CSS Example
 
