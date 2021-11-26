@@ -3,6 +3,7 @@
 A streaming and media service provider powered by next js. for playlist creation and playback functionality.
 
 > Spotify API for fetching playlists from the genuine article and control music playback
+> Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)
 
 Fetch Spotify Playlists + Control Music playback with the Spotify API
 User authentication with Spotify + NextAuth to persist user's logged in state! (Including how to use access & refresh oAuth JWT tokens)
