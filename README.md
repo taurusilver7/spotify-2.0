@@ -6,7 +6,7 @@ A streaming and media service provider powered by next js. for playlist creation
 > Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)
 > tailwind css for a responsive UI styling.
 > Next.js v.12.0.0 middleware to handle authenticated user access
-> Learn how to use Recoil for state management (when switching playlists and songs)!
+> Recoil instead of Redux for state management (when switching playlists and songs)
 
 # Next.js + Tailwind CSS Example
 
