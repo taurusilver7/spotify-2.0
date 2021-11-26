@@ -1,3 +1,15 @@
+# Spotify 2.0
+
+A streaming and media service provider powered by next js. for playlist creation and playback functionality.
+
+> Spotify API for fetching playlists from the genuine article and control music playback
+
+Fetch Spotify Playlists + Control Music playback with the Spotify API
+User authentication with Spotify + NextAuth to persist user's logged in state! (Including how to use access & refresh oAuth JWT tokens)
+Style an awesome responsive UI with Tailwind CSS
+Learn how to use Next.js 12 Middleware to handle authenticated user access!
+Learn how to use Recoil for state management (when switching playlists and songs)!
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
