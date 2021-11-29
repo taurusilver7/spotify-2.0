@@ -8,15 +8,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          
-
-          
-
-          
-        </div>
-      </main>
+      <h1>
+        Spotify 2.0 Build initiative starts now. this is dope. Let's fuck each
+        other like rabbits in heat.
+      </h1>
     </div>
   );
 }
