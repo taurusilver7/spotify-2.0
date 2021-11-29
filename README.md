@@ -5,7 +5,8 @@ A streaming and media service providing application powered by next js. v.12 for
 > Spotify API for fetching playlists from the genuine article and control music playback
 > Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)
 > tailwind css for a responsive UI styling.
-> Next.js v.12.0.0 middleware to handle authenticated user access.
+> Next.js v.12.0.0 middleware to handle authenticated user access. (v.12 offers server rendered components)
+> Learn Debounce- prevent from spamming the API.
 > Recoil instead of Redux for state management. (when switching playlists and songs)
 
 # Next.js + Tailwind CSS Example
