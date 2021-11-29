@@ -12,7 +12,7 @@ A streaming and media service providing application powered by next js. v.12 for
 # Build
 
 - Create a project with tailwindcss template command.
-- Create an app in the [spotify for dev](https://developer.spotify.com/dashboard/) to access spotify API for playlist and songs.
+- Create an app in the [spotify for dev](https://developer.spotify.com/dashboard/) to access spotify API for playlist and songs. Obtain the client ID and client secret.
 
 # Next.js + Tailwind CSS Example
 
