@@ -1,6 +1,6 @@
 # Spotify 2.0
 
-![image]({https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white})
+<img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" />
 
 A streaming and media service providing application powered by next js. v.12 for playlist creation and playback functionality.git
 
