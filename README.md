@@ -1,5 +1,7 @@
 # Spotify 2.0
 
+[image]({https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white})
+
 A streaming and media service providing application powered by next js. v.12 for playlist creation and playback functionality.git
 
 > Spotify API for fetching playlists from the genuine article and control music playback.<br />
@@ -26,7 +28,7 @@ A streaming and media service providing application powered by next js. v.12 for
 - To use spotify proccess, login proccess to communicate with spotify API and login with right credentials is needed. The API provides an access token to access to all the required features.
 - The obtained access token expires after every hour, but a refresh token can help obtain the access token repeatedly (for persistance).
 
-* Authentication
+#### Authentication
 
 - To add nextAuth to a project, create a file `[...nextauth]` in `pages/api/auth` location. The file contains the dynamic route handler for NextAuth.js which also contain global nextauth configuration.
 
