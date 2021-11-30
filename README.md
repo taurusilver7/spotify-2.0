@@ -19,7 +19,7 @@ A streaming and media service providing application powered by next js. v.12 for
 
 - add [heroicons](https://github.com/tailwindlabs/heroicons) dependency to the build.
 - Add the required buttons and the styles accordingly.
-- The special
+- The special effect for spotify is to make the whole screen (the parent div in index.js) set and overflow hidden while the containers within the parent element has the overflow-scroll.
 
 - The background spotify application turning dormant can cause the building application pause functioning. Activating and refreshing the build will do.
 - Essentially, the spotify API is a remote (start, stop, select song) player from an active device (phone, computer, app) for the original spotify app.
