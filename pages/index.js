@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Sidebar from "../components/Sidebar";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
 
       <main>
         {/* Sidebar */}
+        <Sidebar />
         {/* Center */}
       </main>
       <div>{/*Player*/}</div>
