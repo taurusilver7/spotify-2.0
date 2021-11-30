@@ -40,6 +40,9 @@ const Sidebar = () => {
         <hr className="border-t-[0.1px] border-gray-500" />
 
         {/* Playlists */}
+        <p className="cursor-pointer hover:text-white">Player list</p>
+        <p className="cursor-pointer hover:text-white">Player list</p>
+        <p className="cursor-pointer hover:text-white">Player list</p>
       </div>
     </div>
   );
