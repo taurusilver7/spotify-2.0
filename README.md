@@ -2,14 +2,14 @@
 
 A streaming and media service providing application powered by next js. v.12 for playlist creation and playback functionality.git
 
-> Spotify API for fetching playlists from the genuine article and control music playback
-> Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)
-> tailwind css for a responsive UI styling.
+> Spotify API for fetching playlists from the genuine article and control music playback.<br />
+> Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)<br />
+> Tailwind css for a responsive UI styling.
 > Next.js v.12.0.0 middleware to handle authenticated user access. (v.12 offers server rendered components)
 > Learn Debounce to prevent from spamming the API.
 > Recoil instead of Redux for state management. (when switching playlists and songs)
 
-# Build
+## Build
 
 - Create a project with tailwindcss template command.
 - Refactor the starter template in the index.js
@@ -18,7 +18,7 @@ A streaming and media service providing application powered by next js. v.12 for
 - The background spotify application turning dormant can cause the building application pause functioning. Activating and refreshing the build will do.
 - Essentially, the spotify API is a remote (start, stop, select song) player from an active device (phone, computer, app) for the original spotify app.
 
-### Sidebar
+#### Sidebar
 
 - add [heroicons](https://github.com/tailwindlabs/heroicons) dependency to the build.
 - Add the required buttons and the styles accordingly.
@@ -28,7 +28,7 @@ A streaming and media service providing application powered by next js. v.12 for
 
 * Authentication
 
-- To add nextAuth to a project, create a file []
+- To add nextAuth to a project, create a file `[...nextauth]` in `pages/api/auth` location. The file contains the dynamic route handler for NextAuth.js which also contain global nextauth configuration.
 
 # Next.js + Tailwind CSS Example
 
