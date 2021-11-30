@@ -15,7 +15,10 @@ A streaming and media service providing application powered by next js. v.12 for
 - Refactor the starter template in the index.js
 - Create an app in the [spotify for dev](https://developer.spotify.com/dashboard/) to access spotify API for playlist and songs. Obtain the client ID and client secret.
 
-* Sidebar
+- The background spotify application turning dormant can cause the building application pause functioning. Activating and refreshing the build will do.
+- Essentially, the spotify API is a remote (start, stop, select song) player from an active device (phone, computer, app) for the original spotify app.
+
+### Sidebar
 
 - add [heroicons](https://github.com/tailwindlabs/heroicons) dependency to the build.
 - Add the required buttons and the styles accordingly.
@@ -23,8 +26,9 @@ A streaming and media service providing application powered by next js. v.12 for
 - To use spotify proccess, login proccess to communicate with spotify API and login with right credentials is needed. The API provides an access token to access to all the required features.
 - The obtained access token expires after every hour, but a refresh token can help obtain the access token repeatedly (for persistance).
 
-- The background spotify application turning dormant can cause the building application pause functioning. Activating and refreshing the build will do.
-- Essentially, the spotify API is a remote (start, stop, select song) player from an active device (phone, computer, app) for the original spotify app.
+* Authentication
+
+- To add nextAuth to a project, create a file []
 
 # Next.js + Tailwind CSS Example
 
