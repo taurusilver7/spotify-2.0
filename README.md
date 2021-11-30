@@ -17,6 +17,7 @@ A streaming and media service providing application powered by next js. v.12 for
 
 * Sidebar
 
+- add [heroicons](https://github.com/tailwindlabs/heroicons) dependency to the build.
 -
 
 # Next.js + Tailwind CSS Example
