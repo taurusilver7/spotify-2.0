@@ -18,7 +18,10 @@ A streaming and media service providing application powered by next js. v.12 for
 * Sidebar
 
 - add [heroicons](https://github.com/tailwindlabs/heroicons) dependency to the build.
--
+- Add the required buttons and the styles accordingly.
+
+- The background spotify application turning dormant can cause the building application pause functioning. Activating and refreshing the build will do.
+- Essentially, the spotify API is a remote (start, stop, select song) player from an active device (phone, computer, app) for the original spotify app.
 
 # Next.js + Tailwind CSS Example
 
