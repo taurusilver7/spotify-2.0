@@ -8,13 +8,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Spotify 2.0 Build initiative starts now. this is dope.</h1>
+      <h1>Spotify 2.0 Build</h1>
 
       <main>
         {/* Sidebar */}
         {/* Center */}
       </main>
-      <div> {/*Player*/} </div>
+      <div>{/*Player*/}</div>
     </div>
   );
 }
