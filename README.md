@@ -1,12 +1,13 @@
 # Spotify 2.0
 
-<img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" height="150" />
+<img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" height="15" />
 
 A streaming and media service providing application powered by next js. v.12 for playlist creation and playback functionality.git
 
 Spotify API for fetching playlists from the genuine article and control music playback.<br />
 
-> Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)<br /> > <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /> Tailwind css for a responsive UI styling.
+> Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)<br />
+> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /> Tailwind css for a responsive UI styling.
 > <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" /> Next.js v.12.0.0 middleware to handle authenticated user access. (v.12 offers server rendered components)
 > Learn Debounce to prevent from spamming the API.
 > Recoil instead of Redux for state management. (when switching playlists and songs)<br /> > <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" /> Vercel deployment
