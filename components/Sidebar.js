@@ -1,7 +1,18 @@
+import {
+  HomeIcon,
+  SearchIcon,
+  LibraryIcon,
+  PlusCircleIcon,
+} from "@heroicons/react/outline";
+
 const Sidebar = () => {
   return (
     <div>
-      <h1>Sidebar</h1>
+      <div>
+        <button>
+          <HomeIcon />
+        </button>
+      </div>
     </div>
   );
 };
