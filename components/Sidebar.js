@@ -43,6 +43,7 @@ const Sidebar = () => {
         <p className="cursor-pointer hover:text-white">Player list</p>
         <p className="cursor-pointer hover:text-white">Player list</p>
         <p className="cursor-pointer hover:text-white">Player list</p>
+        <p>Player list</p>
       </div>
     </div>
   );
