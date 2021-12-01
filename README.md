@@ -7,15 +7,15 @@ A streaming and media service providing application powered by next js. v.12 for
 Spotify API for fetching playlists from the genuine article and control music playback.<br />
 
 > Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)<br /> > <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" height="20" /> for a responsive UI styling.
-> <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" height="20" /> v.12.0.0 middleware to handle authenticated user access. (v.12 offers server rendered components)
+> Next-JS v.12.0.0 middleware to handle authenticated user access. (v.12 offers server rendered components)
 > Learn Debounce to prevent from spamming the API.<br />
-> Recoil instead of Redux for state management. (when switching playlists and songs)<br /> 
+> Recoil instead of Redux for state management. (when switching playlists and songs)<br />
 
 ## Build
 
 - Create a project with tailwindcss template command.
 - Refactor the starter template in the index.js
-- Create an app in the [spotify for dev](https://developer.spotify.com/dashboard/) to access spotify API for playlist and songs. Obtain the client ID and client secret. 
+- Create an app in the [spotify for dev](https://developer.spotify.com/dashboard/) to access spotify API for playlist and songs. Obtain the client ID and client secret.
 
 - The background spotify application turning dormant can cause the building application pause functioning. Activating and refreshing the build will do.
 - Essentially, the spotify API is a remote (start, stop, select song) player from an active device (phone, computer, app) for the original spotify app.
