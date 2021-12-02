@@ -31,6 +31,7 @@ Spotify API for fetching playlists from the genuine article and control music pl
 #### Authentication
 
 - To add nextAuth to a project, create a file `[...nextauth]` in `pages/api/auth` location. The file contains the dynamic route handler for NextAuth.js which also contain global nextauth configuration.
+- add the latest beta next-auth dependency and handle the authentication in [...nexthauth].
 
 # Next.js + Tailwind CSS Example
 
