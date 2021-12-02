@@ -6,8 +6,7 @@ A streaming and media service providing application powered by next js. v.12 for
 
 Spotify API for fetching playlists from the genuine article and control music playback.<br />
 
-> Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)<br /> 
-> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" height="20" /> for a responsive UI styling.<br />
+> Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)<br /> > <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" height="20" /> for a responsive UI styling.<br />
 > Next-JS v.12.0.0 middleware to handle authenticated user access. (v.12 offers server rendered components)<br />
 > Learn Debounce to prevent from spamming the API.<br />
 > Recoil instead of Redux for state management. (when switching playlists and songs)<br />
@@ -40,6 +39,8 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - An authentication token to get access to the services in spotify API is added to the provider in _/authentication/_.
 - A lib directory (helpul file or utility file) for holding required info (login_url) is created.
 - [Spotify-web-api-node](https://github.com/thelinmichael/spotify-web-api-node) package for interacting with the API.
+- The permissions required for accessing the API features are created as _/params/_ and the spotify API for a specific accound is requested.
+- The _/LOGIN_/URL\_/ will literally pop-in the spotify login page. If already logged in, it redirects back.
 
 # Next.js + Tailwind CSS Example
 
