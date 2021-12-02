@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import SpotifyProvider from "next-auth/providers/spotify";
+import { LOGIN_URL } from "../../../lib/spotify";
 
 export default NextAuth({
   // Configure one or more authentication providers
@@ -11,4 +12,16 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
+  secret: process.env.JWT_SECRET,
+//   custom login page.
+  pages: {
+      signIn: '/login',
+  },
+  callbacks: {
+      async jwt({token, account, user}){
+
+        // initial sign in
+        
+      }
+  }
 });
