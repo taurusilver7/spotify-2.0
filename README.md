@@ -32,6 +32,7 @@ Spotify API for fetching playlists from the genuine article and control music pl
 
 - To add nextAuth to a project, create a file `[...nextauth]` in `pages/api/auth` location. The file contains the dynamic route handler for NextAuth.js which also contain global nextauth configuration.
 - add the latest beta next-auth dependency and handle the authentication in [...nexthauth].
+- Add auth_url as a base directory (localhost:3000) on local machine. Change the domain to the vercel deployed url as the base directory once deployed.
 
 # Next.js + Tailwind CSS Example
 
