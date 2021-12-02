@@ -5,8 +5,8 @@ export default NextAuth({
   // Configure one or more authentication providers
   providers: [
     SpotifyProvider({
-      clientId: process.env.SPOTIFY_ID,
-      clientSecret: process.env.SPOTIFY_SECRET,
+      clientId: process.env.SPOTIFY_CLIENT_ID,
+      clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
     }),
     // ...add more providers here
   ],
