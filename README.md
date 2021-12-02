@@ -36,6 +36,9 @@ Spotify API for fetching playlists from the genuine article and control music pl
   -A public client_id(exposed to client, browser & server) and client_secret are added from spotify API.
 - A _/JWT/_ secret (random bunch of strings) for encrypting the JWT token.
 - Restart the server to actually load in the env variables.
+- An authentication token to get access to the services in spotify API is added to the provider in _/authentication/_.
+- A lib directory (helpul file or utility file) for holding required info (login_url) is created.
+- [Spotify-web-api-node](https://github.com/thelinmichael/spotify-web-api-node) package for interacting with the API.
 
 # Next.js + Tailwind CSS Example
 
