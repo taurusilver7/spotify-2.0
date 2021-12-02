@@ -41,6 +41,10 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - [Spotify-web-api-node](https://github.com/thelinmichael/spotify-web-api-node) package for interacting with the API.
 - The permissions required for accessing the API features are created as _/params/_ and the spotify API for a specific accound is requested.
 - The _/LOGIN_/URL\_/ will literally pop-in the spotify login page. If already logged in, it redirects back.
+- Add in the aditional information for custom login page. [refresh token](https://next-auth.js.org/tutorials/refresh-token-rotation) for initial sign-in callback.
+- If the initial sign-in is valid, program the callback to return the token, access_token, refresh_token, username.
+- And important special variable to validate the expiration of access token: _/accessTokenExpires/_
+- Condition for access token expiration. Create a function for timing the access and refresh tokens right.
 
 # Next.js + Tailwind CSS Example
 
