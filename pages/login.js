@@ -1,9 +1,15 @@
 import { signIn, getProviders } from "next-auth/react";
 
-const login = () => {
+const login = ({ providers }) => {
   return (
     <div>
       <img className="w-52 mb-5" src="https://links.papareact.com/9xl" alt="" />
+
+      {Object.values(providers).map((provider) => (
+        <div>
+          <button>Login with {provider.name}</button>
+        </div>
+      ))}
     </div>
   );
 };
@@ -15,7 +21,7 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      provider,
+      providers,
     },
   };
 }
