@@ -66,6 +66,14 @@ export default NextAuth({
 
       return await refreshAccessToken(token);
     },
-    async session({ session, token }) {},
+    async session({ session, token }) {
+      // If access token expires, refresh it
+      // A session object created for user to tap into as part of client session.
+      session.user.accessToken = token.accessToken;
+      session.user.refreshToken = token.refreshToken;
+      session.user.username = token.username;
+
+      return session;
+    },
   },
 });
