@@ -10,6 +10,12 @@ async function refreshAccessToken(token) {
     const { body: refreshedAccessToken } =
       await spotifyApi.refreshAccessToken();
     console.log("REFRESHED TOKEN IS", refreshedToken);
+
+    return {
+      ...token,
+      accessToken: refreshedToken.access_token,
+      accessTokenExpires: Date.now() + refreshedToken.expires_in * 1000, // 1hr as 3600 returns from spotify API.
+    };
   } catch {
     console.error(error);
 
