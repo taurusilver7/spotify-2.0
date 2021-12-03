@@ -45,6 +45,7 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - If the initial sign-in is valid, program the callback to return the token, access_token, refresh_token, username.
 - And important special variable to validate the expiration of access token: _/accessTokenExpires/_
 - Condition for access token expiration. Create a function for timing the access and refresh tokens right.
+- Create a session object for the user to tap into as a part of client session.
 
 # Next.js + Tailwind CSS Example
 
