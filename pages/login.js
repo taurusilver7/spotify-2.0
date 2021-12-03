@@ -3,8 +3,7 @@ import { signIn, getProviders } from "next-auth/react";
 const login = () => {
   return (
     <div>
-      <h1>Login Page</h1>
-      <p>The login page</p>
+      <img className="w-52 mb-5" src="https://links.papareact.com/9xl" alt="" />
     </div>
   );
 };
