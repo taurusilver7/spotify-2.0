@@ -49,6 +49,7 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - Create a server side rendering function.
 - Customize the login page and map over the providers for the login button and with signIn function and callback parameters.
 - Add the [redirect url](http://localhost:3000/api/auth/callback/spotify) in the spotify API. Add the redirect url from the deployed site to the API.
+- The spotify API redirects the admin to the terms and conditions to the scopes[functions or permissions] and redirects to the home page.
 
 # Next.js + Tailwind CSS Example
 
