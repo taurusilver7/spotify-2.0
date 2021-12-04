@@ -47,7 +47,8 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - Condition for access token expiration. Create a function for timing the access and refresh tokens right.
 - Create a session object for the user to tap into as a part of client session.
 - Create a server side rendering function.
-- Customize the login page and map over the providers for the login button.
+- Customize the login page and map over the providers for the login button and with signIn function and callback parameters.
+- Add the [redirect url](http://localhost:3000/api/auth/callback/spotify) in the spotify API. Add the redirect url from the deployed site to the API.
 
 # Next.js + Tailwind CSS Example
 
