@@ -6,7 +6,7 @@ const login = ({ providers }) => {
       <img className="w-52 mb-5" src="https://links.papareact.com/9xl" alt="" />
 
       {Object.values(providers).map((provider) => (
-        <div>
+        <div key={provider}>
           <button>Login with {provider.name}</button>
         </div>
       ))}
