@@ -52,9 +52,10 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - The spotify API redirects the admin to the terms and conditions to the scopes[functions or permissions] and redirects to the home page.
 
 #### Middleware
+
 - The upgrade in v.12 made the integration of middleware super simple. Every request from the user to the site, the middleware checks the response and parse for specific parameters given.
 - The access token check is parsed into the middleware during login. If absent, the middleware redirects the user to login page.
-- 
+- The middleware function is created in _/middleware.js/_ in api directory.
 
 # Next.js + Tailwind CSS Example
 
