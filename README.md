@@ -59,6 +59,12 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - The token with the jwt*secret is obtained from the request. If the pathname includes the token or the url string *//api/auth/\_, the middleware forwards the user to page.
 - If no token is available and the pathname doesn't include _/login/_, the middleware redirect the user to login page.
 
+#### Center
+
+- The Sidebar is styled with overflow-y-scroll, to make the sidebar scroll.
+- The center takes up much space on the screen. The [tailwind-scrollbar-hide](https://www.npmjs.com/package/tailwind-scrollbar-hide) dependency clears off the scrollbar at the sidebar. Add the dependency in _/tailwind.config.js/_
+- Add the property _/scrollbar-hide/_ in Sidebar to only hide it, but not the functionality.
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
