@@ -51,6 +51,11 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - Add the [redirect url](http://localhost:3000/api/auth/callback/spotify) in the spotify API. Add the redirect url from the deployed site to the API.
 - The spotify API redirects the admin to the terms and conditions to the scopes[functions or permissions] and redirects to the home page.
 
+#### Middleware
+- The upgrade in v.12 made the integration of middleware super simple. Every request from the user to the site, the middleware checks the response and parse for specific parameters given.
+- The access token check is parsed into the middleware during login. If absent, the middleware redirects the user to login page.
+- 
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
