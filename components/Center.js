@@ -7,7 +7,7 @@ const Center = () => {
     <div className="flex flex-grow text-white">
       <h1>Center logic for spotify</h1>
       <header>
-        <div>
+        <div className="flex items-center bg-black space-x-3 opacity-90 hover:opacity-80">
           <img
             className="rounded-full w-10 h-10"
             src={session?.user.image}
