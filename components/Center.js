@@ -4,7 +4,7 @@ import { ChevronDownIcon } from "@heroicons/react/outline";
 const Center = () => {
   const { data: session } = useSession();
   return (
-    <div className="flex flex-grow">
+    <div className="flex-grow">
       <h1>Center logic for spotify</h1>
       <header className="absolute top-5 right-8">
         <div className="flex items-center bg-black space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2">
