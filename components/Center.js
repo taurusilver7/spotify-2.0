@@ -1,5 +1,6 @@
 import { useSession } from "next-auth/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
+import { useEffect } from "react";
 
 const colors = [
   "from-indigo-500",
@@ -9,10 +10,12 @@ const colors = [
   "from-yellow-500",
   "from-pink-500",
   "from-purple-500",
-]
+];
 
 const Center = () => {
   const { data: session } = useSession();
+  const [color, setColor] = useState(null);
+  useEffect(() => {}, [session]);
   return (
     <div className="flex-grow">
       <h1>Center logic for spotify</h1>
