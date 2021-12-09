@@ -67,7 +67,7 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - Create an array for color codings used inthe center styling.
 - Create a piece of state for tracking the color combination and UseEffect to render the color at every reload.
 - Use a random library to randomly set the color in styling. it's a heavy library and only use the components required in moderation.
-- Use the shuffle method from lodash to randomly select the color to style the center.
+- Use the shuffle method from lodash to randomly select the color to style the center. Update the UseEffect to update the color on every playlist selection.
 
 # Next.js + Tailwind CSS Example
 
