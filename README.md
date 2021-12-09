@@ -65,8 +65,9 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - The center takes up much space on the screen. The [tailwind-scrollbar-hide](https://www.npmjs.com/package/tailwind-scrollbar-hide) dependency clears off the scrollbar at the sidebar. Add the dependency in _/tailwind.config.js/_
 - Add the property _/scrollbar-hide/_ in Sidebar to only hide it, but not the functionality.
 - Create an array for color codings used inthe center styling.
-- Create a piece of state for tracking the color combination and . 
-- 
+- Create a piece of state for tracking the color combination and .
+- Use a random library to randomly set the color in styling. it's a heavy library and only use the components required in moderation.
+-
 
 # Next.js + Tailwind CSS Example
 
