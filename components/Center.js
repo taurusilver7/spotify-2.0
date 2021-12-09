@@ -1,6 +1,7 @@
 import { useSession } from "next-auth/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
 import { useEffect } from "react";
+import { shuffle } from "lodash";
 
 const colors = [
   "from-indigo-500",
@@ -15,7 +16,9 @@ const colors = [
 const Center = () => {
   const { data: session } = useSession();
   const [color, setColor] = useState(null);
-  useEffect(() => {}, [session]);
+  useEffect(() => {
+    setColor(shuffle(color));
+  }, [session]);
   return (
     <div className="flex-grow">
       <h1>Center logic for spotify</h1>
