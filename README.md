@@ -69,6 +69,10 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - Use a random library to randomly set the color in styling. it's a heavy library and only use the components required in moderation.
 - Use the shuffle method from lodash to randomly select the color to style the center. Update the UseEffect to update the color on every playlist selection.
 
+#### Custom Hook
+
+- useSpotify to hold all the playlist logic and the speed of the application in the _/hooks/_ directory.
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
