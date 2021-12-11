@@ -13,7 +13,7 @@ const useSpotify = () => {
       spotifyApi.setAccessToken(session.user.accessToken);
     }
   }, [session]);
-  return null;
+  return spotifyApi;
 };
 
 export default useSpotify;
