@@ -12,6 +12,7 @@ const colors = [
   "from-pink-500",
   "from-purple-500",
   "from-orange-500",
+  "form-magenta-500",
 ];
 
 const Center = () => {
