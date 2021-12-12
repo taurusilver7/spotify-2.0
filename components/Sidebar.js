@@ -20,7 +20,7 @@ const Sidebar = () => {
         setPlaylists(data.body.items);
       });
     }
-  }, [session, spotifyApi]);
+  }, []);
 
   console.log(playlists);
   return (
