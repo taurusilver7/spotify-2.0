@@ -20,7 +20,7 @@ const Sidebar = () => {
         setPlaylists(data.body.items);
       });
     }
-  }, []);
+  }, [session]);
 
   console.log(playlists);
   return (
