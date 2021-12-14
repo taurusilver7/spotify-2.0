@@ -11,6 +11,7 @@ import { useState } from "react";
 import spotifyApi from "../lib/spotify";
 
 const Sidebar = () => {
+  const spotiftyApi = useSpotify();
   const { data: session, status } = useSession();
   const [playlists, setPlaylists] = useState([]);
 
