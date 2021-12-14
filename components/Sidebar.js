@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/outline";
 import { useSession, signOut } from "next-auth/react";
 import { useState } from "react";
-import spotifyApi from "../lib/spotify";
+import {useSpotify} from "../hooks/useSpotify";
 
 const Sidebar = () => {
   const spotiftyApi = useSpotify();
