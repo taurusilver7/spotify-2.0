@@ -74,6 +74,7 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - useSpotify to hold all the playlist logic and the speed of the application in the _/hooks/_ directory.
 - A useEffect to run on mount and depedency `session`. The page is redirected to the signIn page forcefully based on the token error in the session.
 - Set the access token for the api to use throughout the build. The spotify app is initialized only once and used throughout the session. The session and the spotifyApi are added as dependencies to the useEffect to mount the build.
+- The method _/getPlaylists/_ to parse in options to the sidebar.
 
 # Next.js + Tailwind CSS Example
 
