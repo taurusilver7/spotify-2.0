@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" height="40" />
 
-A streaming and media service providing application powered by next js. v.12 for playlist creation and playback functionality.git
+A streaming and media service providing application powered by next js. v.12 for playlist creation and playback functionality.git.
 
 Spotify API for fetching playlists from the genuine article and control music playback.<br />
 
