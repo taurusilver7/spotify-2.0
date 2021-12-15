@@ -80,6 +80,7 @@ Spotify API for fetching playlists from the genuine article and control music pl
 #### Recoil
 
 - Regardless of the component, the glbal state can allow the changes in the component with higher order state management.
+- [Recoil JS](https://recoiljs.org/docs/introduction/getting-started) and add the wrapper component to the build API.
 
 # Next.js + Tailwind CSS Example
 
