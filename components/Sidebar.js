@@ -7,17 +7,17 @@ import {
   RssIcon,
 } from "@heroicons/react/outline";
 import { useSession, signOut } from "next-auth/react";
-import { useState } from "react";
-import { useSpotify } from "../hooks/useSpotify";
+import { useState, useEffect } from "react";
+import useSpotify from "../hooks/useSpotify";
 
 const Sidebar = () => {
-  const spotiftyApi = useSpotify();
+  const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
   const [playlists, setPlaylists] = useState([]);
 
   useEffect(() => {
-    if (spotiftyApi.getAccessToken()) {
-      spotiftyApi.getUserPlaylists().then((data) => {
+    if (spotifyApi.getAccessToken()) {
+      spotifyApi.getUserPlaylists().then((data) => {
         setPlaylists(data.body.items);
       });
     }
@@ -60,7 +60,9 @@ const Sidebar = () => {
 
         {/* Playlists */}
         {playlists.map((playlist) => (
-          <p className="cursor-pointer hover:text-white">{playlist.name}</p>
+          <p key={playlist.id} className="cursor-pointer hover:text-white">
+            {playlist.name}
+          </p>
         ))}
       </div>
     </div>
