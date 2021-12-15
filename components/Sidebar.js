@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/outline";
 import { useSession, signOut } from "next-auth/react";
 import { useState } from "react";
-import {useSpotify} from "../hooks/useSpotify";
+import { useSpotify } from "../hooks/useSpotify";
 
 const Sidebar = () => {
   const spotiftyApi = useSpotify();
@@ -17,7 +17,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     if (spotiftyApi.getAccessToken()) {
-      spotiftyApi.getUserPlaylist().then((data) => {
+      spotiftyApi.getUserPlaylists().then((data) => {
         setPlaylists(data.body.items);
       });
     }
@@ -59,8 +59,9 @@ const Sidebar = () => {
         <hr className="border-t-[0.1px] border-gray-500" />
 
         {/* Playlists */}
-        <p className="cursor-pointer hover:text-white">Player list</p>
-        <p className="cursor-pointer hover:text-white">Player list</p>
+        {playlists.map((playlist) => (
+          <p className="cursor-pointer hover:text-white">{playlist.name}</p>
+        ))}
       </div>
     </div>
   );
