@@ -75,6 +75,7 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - A useEffect to run on mount and depedency `session`. The page is redirected to the signIn page forcefully based on the token error in the session.
 - Set the access token for the api to use throughout the build. The spotify app is initialized only once and used throughout the session. The session and the spotifyApi are added as dependencies to the useEffect to mount the build.
 - The method _/getPlaylists/_ and _/setPlaylists/_ to parse in options to the sidebar.
+- The induvidual playlist can't be added as piece of states, since the states can't be lifted higher than the component. Recoil is the global state management for the ind,. playlist.
 
 # Next.js + Tailwind CSS Example
 
