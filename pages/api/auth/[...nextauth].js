@@ -38,7 +38,7 @@ export default NextAuth({
     // ...add more providers here
   ],
   secret: process.env.JWT_SECRET,
-  //   custom login page.
+  // custom login page.
   pages: {
     signIn: "/login",
   },
