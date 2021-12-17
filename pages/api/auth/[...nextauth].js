@@ -28,14 +28,14 @@ async function refreshAccessToken(token) {
 }
 
 export default NextAuth({
-  // Configure one or more authentication providers
+  // Configure one or more authentication providers.
   providers: [
     SpotifyProvider({
       clientId: process.env.SPOTIFY_CLIENT_ID,
       clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
       authorization: LOGIN_URL,
     }),
-    // ...add more providers here
+    // ...add more providers here.
   ],
   secret: process.env.JWT_SECRET,
   // custom login page.
@@ -44,7 +44,7 @@ export default NextAuth({
   },
   callbacks: {
     async jwt({ token, account, user }) {
-      // 1. initial sign in
+      // 1. initial sign in.
       if (account && user) {
         return {
           ...token,
@@ -66,7 +66,7 @@ export default NextAuth({
       return await refreshAccessToken(token);
     },
     async session({ session, token }) {
-      // If access token expires, refresh it
+      // If access token expires, refresh it.
       // A session object created for user to tap into as part of client session.
       session.user.accessToken = token.accessToken;
       session.user.refreshToken = token.refreshToken;
