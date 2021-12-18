@@ -63,7 +63,13 @@ const Center = () => {
       <section
         className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-80 text-white p-8`}
       >
-        {/* <img src="" alt="" /> */}
+        <img src={playlist?.images?.[0]?.url} alt="" />
+        <div>
+          <p>Playlist</p>
+          <hi className="text-2xl md:text-3xl xl:text-5xl font-bold">
+            {playlist?.name}
+          </hi>
+        </div>
       </section>
     </div>
   );
