@@ -2,6 +2,7 @@ import { useSession } from "next-auth/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
 import { useEffect, useState } from "react";
 import { shuffle } from "lodash";
+import useSpotify from "../hooks/useSpotify";
 
 import { useRecoilState, useRecoilValue } from "recoil";
 import { playlistIdState, playlistState } from "../atoms/playlistAtom";
@@ -20,6 +21,7 @@ const colors = [
 
 const Center = () => {
   const { data: session } = useSession();
+  const spotifyApi = useSpotify();
   const [color, setColor] = useState(null);
   // const [playlistId, setPlaylistId] = useRecoilState(playlistIdState);
 
@@ -31,6 +33,18 @@ const Center = () => {
   useEffect(() => {
     setColor(shuffle(colors).pop());
   }, [playlistId]);
+
+  useEffect(() => {
+    spotifyApi
+      .getPlaylist(playlistId)
+      .then((data) => {
+        setPlaylist(data.body);
+      })
+      .catch((err) => console.log("something went wrong", err));
+  }, [spotifyApi, playlistId]);
+
+  console.log(playlist);
+
   return (
     <div className="flex-grow">
       <h1>Center logic for spotify</h1>
