@@ -3,8 +3,8 @@ import { ChevronDownIcon } from "@heroicons/react/outline";
 import { useEffect, useState } from "react";
 import { shuffle } from "lodash";
 
-import { useRecoilValue } from "recoil";
-import { playlistIdState } from "../atoms/playlistAtom";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { playlistIdState, playlistState } from "../atoms/playlistAtom";
 
 const colors = [
   "from-indigo-500",
@@ -25,6 +25,8 @@ const Center = () => {
 
   // Read only value from the global variable
   const playlistId = useRecoilValue(playlistIdState);
+
+  const [playlist, setPlaylist] = useRecoilState(playlistState);
 
   useEffect(() => {
     setColor(shuffle(colors).pop());
