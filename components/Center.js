@@ -6,6 +6,7 @@ import useSpotify from "../hooks/useSpotify";
 
 import { useRecoilState, useRecoilValue } from "recoil";
 import { playlistIdState, playlistState } from "../atoms/playlistAtom";
+import Song from "./Song";
 
 const colors = [
   "from-indigo-500",
