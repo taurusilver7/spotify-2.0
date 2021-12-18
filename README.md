@@ -88,6 +88,8 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - Another atom (|redux: slice) _playlistState_ to get the playlists.
 - Style the Center component to accomodate the playlist bkg-img and name and customize the screen accordingly.
 
+- Render the SPA on the server-side to pre-render the user on the server to get the access token before it hits the client.
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
