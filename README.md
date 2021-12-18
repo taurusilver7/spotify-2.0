@@ -83,7 +83,8 @@ Spotify API for fetching playlists from the genuine article and control music pl
 - [Recoil JS](https://recoiljs.org/docs/introduction/getting-started) and add the wrapper component to the build API.
 - Create recoil atoms (redux: slices) i.e sections in the global state for changes.
 - playlistAtom for making changes in the sidebar playlist component.
-- The atom specific attributes [key, default] are given distinct values and the atom is propped in _useRecoilState_
+- The atom specific attributes [key, default] are given distinct values and the atom is propped in _useRecoilState()_ to get the id in global state.
+- 
 
 # Next.js + Tailwind CSS Example
 
