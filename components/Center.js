@@ -28,7 +28,7 @@ const Center = () => {
 
   useEffect(() => {
     setColor(shuffle(colors).pop());
-  }, []);
+  }, [playlistId]);
   return (
     <div className="flex-grow">
       <h1>Center logic for spotify</h1>
