@@ -10,14 +10,19 @@ import Songs from "./Songs";
 
 const colors = [
   "from-indigo-500",
+  "from-emerald-500",
   "from-blue-500",
   "from-green-500",
   "from-red-500",
   "from-yellow-500",
+  "from-cyan-500",
   "from-pink-500",
+  "from-amber-500",
   "from-purple-500",
   "from-orange-500",
+  "from-lime-500",
   "form-magenta-500",
+  "form-sky-400",
 ];
 
 const Center = () => {
@@ -62,7 +67,7 @@ const Center = () => {
       </header>
 
       <section
-        className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-80 text-white p-8`}
+        className={`flex items-end space-x-7 bg-gradient-to-b to-slate-900 ${color} h-80 text-white p-8`}
       >
         <img
           className="h-44 w-44 shadow-2xl"
