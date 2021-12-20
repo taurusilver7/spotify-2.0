@@ -56,7 +56,7 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - Create a session object for the user to tap into as a part of client session.
 - Create a server side rendering function.
 - Customize the login page and map over the providers for the login button and with signIn function and callback parameters.
-- Add the [redirect url](http://localhost:3000/api/auth/callback/spotify) in the spotify API. Add the redirect url from the deployed site to the API.
+- Add the redirect url `http://localhost:3000/api/auth/callback/spotify` in the spotify API. Add the redirect url from the deployed site to the API.
 - The spotify API redirects the admin to the terms and conditions to the scopes[functions or permissions] and redirects to the home page.
 
 #### Middleware
@@ -105,6 +105,10 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - The album name is inquistely hidden; visible only in md screen. The whole div has auto-left margin in mobile view and ml-o in md screen.
 - A helper function for calculating the song duration from ms to mins:secs.
 - The song component p-tags are customized and the logout funtion is shifted to the image component at top-right.
+
+#### SongAtom
+
+- An atom for tracking the songs in the playlist played in the player.
 
 # Next.js + Tailwind CSS Example
 
