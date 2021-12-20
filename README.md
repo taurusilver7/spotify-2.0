@@ -96,10 +96,12 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - Another atom (|redux: slice) _playlistState_ to get the playlists.
 - Style the Center component to accomodate the playlist bkg-img and name and customize the screen accordingly.
 
-#### Song
+#### Songs & Song
 
 - Render the SPA on the server-side to pre-render the user on the server to get the access token before it hits the client.
--
+- Songs component to hold the induvidual songs collectively while dispatcing the playlists according to the api.
+- the individual song component mounts the data from the playlist-album-images.
+- The main housing div in the center component is made scrollable in y-axis for song selection.
 
 # Next.js + Tailwind CSS Example
 
