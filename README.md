@@ -102,6 +102,7 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - Songs component to hold the induvidual songs collectively while dispatcing the playlists according to the api.
 - the individual song component mounts the data from the playlist-album-images.
 - The main housing div in the center component is made scrollable in y-axis for song selection.
+- The album name is inquistely hidden; visible only in md screen. The whole div has auto-left margin in mobile view and ml-o in md screen.
 
 # Next.js + Tailwind CSS Example
 

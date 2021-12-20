@@ -17,8 +17,8 @@ const Song = ({ track, order }) => {
         </div>
       </div>
 
-      <div>
-        <p>{track.track.album.name}</p>
+      <div className="flex items-center justify-between ml-auto md:ml-0">
+        <p className='hidden md:inline'>{track.track.album.name}</p>
         <p>duration</p>
       </div>
     </div>
