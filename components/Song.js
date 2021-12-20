@@ -1,4 +1,5 @@
 import useSpotify from "../hooks/useSpotify";
+import { msToMinsAndSecs } from "../lib/time";
 
 const Song = ({ track, order }) => {
   const spotifyApi = useSpotify();
@@ -19,7 +20,7 @@ const Song = ({ track, order }) => {
 
       <div className="flex items-center justify-between ml-auto md:ml-0">
         <p className='hidden md:inline'>{track.track.album.name}</p>
-        <p>duration</p>
+        <p>{msToMinsAndSecs(track.track.duration_ms)}</p>
       </div>
     </div>
   );
