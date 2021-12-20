@@ -1,4 +1,4 @@
-import { useSession } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
 import { useEffect, useState } from "react";
 import { shuffle } from "lodash";
@@ -59,6 +59,7 @@ const Center = () => {
             className="rounded-full w-10 h-10"
             src={session?.user.image}
             alt=""
+            onClick={() => signOut()}
           />
           <h2>{session?.user.name}</h2>
           <ChevronDownIcon className="h-5 w-5" />
