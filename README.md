@@ -104,6 +104,7 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - The main housing div in the center component is made scrollable in y-axis for song selection.
 - The album name is inquistely hidden; visible only in md screen. The whole div has auto-left margin in mobile view and ml-o in md screen.
 - A helper function for calculating the song duration from ms to mins:secs.
+- The song component p-tags are customized and the logout funtion is shifted to the image component at top-right.
 
 # Next.js + Tailwind CSS Example
 
