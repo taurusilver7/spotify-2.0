@@ -108,7 +108,7 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 
 #### SongAtom
 
-- An atom for tracking the songs in the playlist played in the player.
+- An atom for tracking the songs from the playlist in the player.
 
 # Next.js + Tailwind CSS Example
 
