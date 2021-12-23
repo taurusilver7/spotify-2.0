@@ -114,6 +114,8 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 #### Player
 
 - A player component for music playback is created and styled as the genuine article.
+- The player needs song information [track data]. The tracks fetched from the API and the song played in player differ in information qualitatively.
+-
 
 # Next.js + Tailwind CSS Example
 
