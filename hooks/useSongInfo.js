@@ -8,7 +8,15 @@ const useSongInfo = () => {
   const [currentIdTrack, setCurrentIdTrack] =
     useRecoilState(currentTrackIdState);
   const [songInfo, setSongInfo] = useState(null);
-  return <div></div>;
+
+  useEffect(() => {
+      const fetchSongInfo = async () => {
+          if (currentTrackId) {
+              const trackInfo = await fetch(`https"//api.spotify.com/v1/tracks/${currentTrackId}`)
+          }
+      }
+  }, [currentIdTrack, spotifyApi]);
+  return songInfo;
 };
 
 export default useSongInfo;
