@@ -116,13 +116,13 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - A player component for music playback is created and styled as the genuine article.
 - The player needs song information [track data]. The tracks fetched from the API and the song played in player differ in information qualitatively.
 - The information from both requests is the song ID. Create a helper function which takes the ID to get the song information[same from the playlist or songlist.]
+- When a request to an API is made, the access token is placed inside the header and parsed it as a [bearer: token]
 
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
 It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
-
 
 ## Deploy your own
 
