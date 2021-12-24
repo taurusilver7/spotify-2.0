@@ -12,6 +12,20 @@ function Player() {
   const [volume, setVolume] = useState(50);
 
   const songInfo = useSongInfo();
+
+  const fetchCurrentSong = () => {
+      if(!songInfo) {
+          spotifyApi.getMyCurrentPlayingTrack().then(data => {
+            //   change the current track details (information)
+          })
+      }
+  }
+
+  useEffect(() => {
+      if(spotifyApi.getAccessToken() && !currentTrackId) {
+        //   fetch the song info.
+      }
+  }, [currentTrackId, spotifyApi, session]);
   return (
     <div>
       {/* left */}
