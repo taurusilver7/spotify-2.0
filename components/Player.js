@@ -1,30 +1,34 @@
 import { useSession } from "next-auth/react";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
-import { currentTrackIdState } from "../atoms/songAtom";
+import { currentTrackIdState, isPlayingState } from "../atoms/songAtom";
 import useSongInfo from "../hooks/useSongInfo";
 import useSpotify from "../hooks/useSpotify";
 
 function Player() {
   const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
-  const [isPlaying, setIsPlaying] = useRecoilState(currentTrackIdState);
+  const [currentTtrackId, setCurrentTtrackId] =
+    useRecoilState(currentTrackIdState);
+  const [isPlaying, setIsPlaying] = useRecoilState(isPlayingState);
   const [volume, setVolume] = useState(50);
 
   const songInfo = useSongInfo();
 
   const fetchCurrentSong = () => {
-      if(!songInfo) {
-          spotifyApi.getMyCurrentPlayingTrack().then(data => {
-            //   change the current track details (information)
-          })
-      }
-  }
+    if (!songInfo) {
+      spotifyApi.getMyCurrentPlayingTrack().then((data) => {
+        console.log("Now Playing:", data.body?.item);
+        //   change the current track details (information)
+        setCurrentTtrackId(data.body?.item?.id);
+      });
+    }
+  };
 
   useEffect(() => {
-      if(spotifyApi.getAccessToken() && !currentTrackId) {
-        //   fetch the song info.
-      }
+    if (spotifyApi.getAccessToken() && !currentTrackId) {
+      //   fetch the song info.
+    }
   }, [currentTrackId, spotifyApi, session]);
   return (
     <div>
