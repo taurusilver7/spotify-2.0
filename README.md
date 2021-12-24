@@ -118,6 +118,7 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - The information from both requests is the song ID. Create a helper function which takes the ID to get the song information[same from the playlist or songlist.]
 - When a request to an API is made, the access token is placed inside the header and parsed it as a [bearer: token]
 - The fetch songInfo function in the custom hook is imported to the player component to parse the details of songs.
+- Fetch the song data and update at every mount in a useEffect in the Player component.
 
 # Next.js + Tailwind CSS Example
 
