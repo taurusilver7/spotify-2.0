@@ -21,6 +21,10 @@ function Player() {
         console.log("Now Playing:", data.body?.item);
         //   change the current track details (information)
         setCurrentTtrackId(data.body?.item?.id);
+
+        spotifyApi.getMyCurrentPlaybackState().then((data) => {
+          setIsPlaying(data.body?.is_playing);
+        });
       });
     }
   };
@@ -28,6 +32,8 @@ function Player() {
   useEffect(() => {
     if (spotifyApi.getAccessToken() && !currentTrackId) {
       //   fetch the song info.
+      fetchCurrentSong();
+      setVolume(50);
     }
   }, [currentTrackId, spotifyApi, session]);
   return (
