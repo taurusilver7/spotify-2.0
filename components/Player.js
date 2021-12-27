@@ -30,7 +30,7 @@ function Player() {
   };
 
   useEffect(() => {
-    if (spotifyApi.getAccessToken() && !currentTrackId) {
+    if (spotifyApi.getAccessToken() && !currentTrackId) {f
       //   fetch the song info.
       fetchCurrentSong();
       setVolume(50);
