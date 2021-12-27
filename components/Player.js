@@ -30,14 +30,15 @@ function Player() {
   };
 
   useEffect(() => {
-    if (spotifyApi.getAccessToken() && !currentTrackId) {f
+    if (spotifyApi.getAccessToken() && !currentTrackId) {
+      f;
       //   fetch the song info.
       fetchCurrentSong();
       setVolume(50);
     }
   }, [currentTrackId, spotifyApi, session]);
   return (
-    <div>
+    <div className="h-24 bg-gradient-to-b from-black to-gray-900 text-white">
       {/* left */}
       <div>
         <img
@@ -45,6 +46,10 @@ function Player() {
           src={songInfo?.album.images?.[0]?.url}
           alt=""
         />
+        <div>
+          <h3>{songInfo?.name}</h3>
+          <p>{songInfo?.artist?.[0]?.name}</p>
+        </div>
       </div>
     </div>
   );
