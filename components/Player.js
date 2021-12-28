@@ -48,6 +48,7 @@ function Player() {
         <div>
           <h3>{songInfo?.name}</h3>
           <p>{songInfo?.artist?.[0]?.name}</p>
+          <p>Halt</p>
         </div>
       </div>
     </div>
