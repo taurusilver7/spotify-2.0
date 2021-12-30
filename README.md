@@ -120,6 +120,7 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - The fetchSongInfo function from the `useSongInfo` custom hook is imported to the player component to parse the details of songs.
 - Fetch the song data and update at every mount in a useEffect in the Player component. The volume of each song is set to fifty percent.
 - The player left side is customized.
+- The center buttons with customized utility class is created. Restructure the script for importing styling file in `index.js`
 
 # Next.js + Tailwind CSS Example
 
