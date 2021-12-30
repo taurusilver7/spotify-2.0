@@ -121,6 +121,8 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - Fetch the song data and update at every mount in a useEffect in the Player component. The volume of each song is set to fifty percent.
 - The player left side is customized.
 - The center buttons with customized utility class is created. Restructure the script for importing styling file in `index.js`
+- The buttons and the implemented function are mounted in Player component.
+- The volume function is placed on the right corner of the component.
 
 # Next.js + Tailwind CSS Example
 

@@ -94,6 +94,19 @@ function Player() {
         />
         <ReplyIcon className="button" />
       </div>
+
+      {/* Right—Volume */}
+      <div className="flex items-center space-x-3 justify-end md:space-x-4 pr-5">
+        <VolumeDownIcon className="button" />
+        <input
+          className="w-14 md:w-20"
+          type="range"
+          value={volume}
+          min={0}
+          max={100}
+        />
+        <VolumeUpIcon className="button" />
+      </div>
     </div>
   );
 }
