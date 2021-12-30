@@ -1,0 +1,12 @@
+/* import tailwind utilities to restruture the application */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Create custom class */
+@layer components {
+  .button {
+    @apply h-5 w-5;
+  }
+}
