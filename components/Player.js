@@ -5,6 +5,7 @@ import { currentTrackIdState, isPlayingState } from "../atoms/songAtom";
 import useSongInfo from "../hooks/useSongInfo";
 import useSpotify from "../hooks/useSpotify";
 import { SwitchHorizontalIcon } from "@heroicons/react/outline";
+import { RewindIcon } from "@heroicons/react/solid";
 
 function Player() {
   const spotifyApi = useSpotify();
@@ -56,6 +57,7 @@ function Player() {
       <div>
         {/* player buttons */}
         <SwitchHorizontalIcon className="button" />
+        <RewindIcon className="button" />
       </div>
     </div>
   );
