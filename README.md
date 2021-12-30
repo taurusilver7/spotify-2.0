@@ -123,6 +123,8 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - The center buttons with customized utility class is created. Restructure the script for importing styling file in `index.js`
 - The buttons and the implemented function are mounted in Player component.
 - The volume function is placed on the right corner of the component.
+- A useEffect which listens to the volume which sets the volume on spotify. Volume change from API uses too much requests and exceed rate/limit and key expiration.
+- For such high frequency operation and key requests, [Debounce]() dependency accurately positions the volume after a certain timeout period [50ms]
 
 # Next.js + Tailwind CSS Example
 
