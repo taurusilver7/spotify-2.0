@@ -4,8 +4,18 @@ import { useRecoilState } from "recoil";
 import { currentTrackIdState, isPlayingState } from "../atoms/songAtom";
 import useSongInfo from "../hooks/useSongInfo";
 import useSpotify from "../hooks/useSpotify";
-import { SwitchHorizontalIcon } from "@heroicons/react/outline";
-import { RewindIcon } from "@heroicons/react/solid";
+import { PauseIcon, SwitchHorizontalIcon } from "@heroicons/react/outline";
+import {
+  HeartIcon,
+  VolumeUpIcon as VolumeDownIcon,
+} from "@heroicons/react/outline";
+import {
+  RewindIcon,
+  FastForwardIcon,
+  PlayIcon,
+  ReplyIcon,
+  VolumeUpIcon,
+} from "@heroicons/react/solid";
 
 function Player() {
   const spotifyApi = useSpotify();
@@ -54,10 +64,23 @@ function Player() {
       </div>
 
       {/* center */}
-      <div>
+      <div className="flex items-center justify-evenly">
         {/* player buttons */}
         <SwitchHorizontalIcon className="button" />
-        <RewindIcon className="button" />
+        <RewindIcon
+          // onClick={() => spotifyApi.skipToPrevious()} API not working properly
+          className="button"
+        />
+        {isPlaying ? (
+          <PauseIcon className="button w-10 h-10" />
+        ) : (
+          <PlayIcon className="button w-10 h-10" />
+        )}
+        <FastForwardIcon
+          // onClick={() => spotifyApi.skipToNext()} API not working properly
+          className="button"
+        />
+        <ReplyIcon className="button" />
       </div>
     </div>
   );
