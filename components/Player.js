@@ -4,7 +4,7 @@ import { useRecoilState } from "recoil";
 import { currentTrackIdState, isPlayingState } from "../atoms/songAtom";
 import useSongInfo from "../hooks/useSongInfo";
 import useSpotify from "../hooks/useSpotify";
-import {SwitchHorizontalIcon} from '@heroicons/react/outline';
+import { SwitchHorizontalIcon } from "@heroicons/react/outline";
 
 function Player() {
   const spotifyApi = useSpotify();
@@ -54,8 +54,8 @@ function Player() {
 
       {/* center */}
       <div>
-      {/* player buttons */}
-      <SwitchHorizontalIcon className='button' />
+        {/* player buttons */}
+        <SwitchHorizontalIcon className="button" />
       </div>
     </div>
   );
