@@ -125,7 +125,7 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - The volume function is placed on the right corner of the component.
 - A useEffect which listens to the volume which sets the volume on spotify. Volume change from API uses too much requests and exceed rate/limit and key expiration.
 - For such high frequency operation and key requests, debouncing the function accurately positions the volume after a certain timeout period [say 50ms]
-- useCallback() allows a memorized function
+- useCallback() allows a memorized function. The function debounces after a period before mounting. [google search engine]
 
 # Next.js + Tailwind CSS Example
 

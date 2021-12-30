@@ -1,6 +1,7 @@
 import { useSession } from "next-auth/react";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
+import { debounce } from "lodash";
 import { currentTrackIdState, isPlayingState } from "../atoms/songAtom";
 import useSongInfo from "../hooks/useSongInfo";
 import useSpotify from "../hooks/useSpotify";
@@ -63,10 +64,15 @@ function Player() {
 
   useEffect(() => {
     if (volume > 0 && volume < 100) {
-      debouncedAdjustVolume(volume)
+      debouncedAdjustVolume(volume);
     }
-  }, [volume])
+  }, [volume]);
 
+  const debouncedAdjustVolume = useCallback(
+    debounce((volume) => {
+      spotifyApi.setVolume(volume).catch((err) => {});
+    }, 500)
+  );
 
   return (
     <div className="grid grid-cols-3 text-xs md:text-base px-2 md:px-8 h-24 bg-gradient-to-b from-black to-gray-900 text-white">
