@@ -102,6 +102,7 @@ function Player() {
           className="w-14 md:w-20"
           type="range"
           value={volume}
+          onChange={(e) => setVolume(Number(e.target.value))}
           min={0}
           max={100}
         />
