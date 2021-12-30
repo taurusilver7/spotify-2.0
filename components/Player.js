@@ -60,6 +60,14 @@ function Player() {
       setVolume(50);
     }
   }, [currentTrackIdState, spotifyApi, session]);
+
+  useEffect(() => {
+    if (volume > 0 && volume < 100) {
+      debouncedAdjustVolume(volume)
+    }
+  }, [volume])
+
+
   return (
     <div className="grid grid-cols-3 text-xs md:text-base px-2 md:px-8 h-24 bg-gradient-to-b from-black to-gray-900 text-white">
       {/* left */}
@@ -97,7 +105,10 @@ function Player() {
 
       {/* Right—Volume */}
       <div className="flex items-center space-x-3 justify-end md:space-x-4 pr-5">
-        <VolumeDownIcon className="button" />
+        <VolumeDownIcon
+          onClick={() => volume > 0 && setVolume(volume - 10)}
+          className="button"
+        />
         <input
           className="w-14 md:w-20"
           type="range"
@@ -106,7 +117,10 @@ function Player() {
           min={0}
           max={100}
         />
-        <VolumeUpIcon className="button" />
+        <VolumeUpIcon
+          onClick={() => volume < 100 && setVolume(volume + 10)}
+          className="button"
+        />
       </div>
     </div>
   );
