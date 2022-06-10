@@ -8,10 +8,10 @@ const login = ({ providers }) => {
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
           <button
-            className="bg-[#180860] text-white p-5 rounded-full"
+            className="bg-[#1ED760] text-black p-4 rounded-full hover:bg-black hover:text-[#1ED760]"
             onClick={() => signIn(provider.id, { callbackUrl: "/" })}
           >
-            Login with {provider.name}
+            Signin with {provider.name} account
           </button>
         </div>
       ))}
