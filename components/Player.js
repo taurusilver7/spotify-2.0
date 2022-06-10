@@ -43,7 +43,7 @@ function Player() {
   };
 
   const handlePlayPause = () => {
-    spotifdyApi.getMyCurrentPlaybackState().then((data) => {
+    spotifyApi.getMyCurrentPlaybackState().then((data) => {
       if (data.body.is_playing) {
         spotifyApi.pause();
         setIsPlaying(false);
@@ -80,7 +80,7 @@ function Player() {
       <div className="flex items-center space-x-4">
         <img
           className="hidden md:inline h-10 w-10"
-          src={songInfo?.album.images?.[0]?.url}
+          src={songInfo?.album?.images?.[0]?.url}
           alt=""
         />
         <div>
@@ -89,12 +89,12 @@ function Player() {
         </div>
       </div>
 
-      {/* center */}
+      {/* Center */}
       <div className="flex items-center justify-evenly">
         {/* player buttons */}
         <SwitchHorizontalIcon className="button" />
         <RewindIcon
-          // onClick={() => spotifyApi.skipToPrevious()} API not working properly
+          // onClick={() => spotifyApi.skipToPrevious()} //API not working properly
           className="button"
         />
         {isPlaying ? (
@@ -103,7 +103,7 @@ function Player() {
           <PlayIcon onClick={handlePlayPause} className="button w-10 h-10" />
         )}
         <FastForwardIcon
-          // onClick={() => spotifyApi.skipToNext()} API not working properly
+          // onClick={() => spotifyApi.skipToNext()} //API not working properly
           className="button"
         />
         <ReplyIcon className="button" />
