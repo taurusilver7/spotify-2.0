@@ -1,12 +1,10 @@
-# Spotify 2.0
-
 <img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" height="40" />
 
 A streaming and media service providing application powered by next js. v.12 for playlist creation and playback functionality.git.
 
 Spotify API for fetching playlists from the genuine article and control music playback.<br />
 
-> Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens)<br /> > <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" height="20" /> for a responsive UI styling.<br />
+> Persistant user login with nextauth and spotify authentication service. (including accessing & refreshing oAuth JWT tokens) for a responsive UI styling.<br />
 > Next-JS v.12.0.0 middleware to handle authenticated user access. (v.12 offers server rendered components)<br />
 > Learn Debounce to prevent from spamming the API.<br />
 > Recoil instead of Redux for state management. (when switching playlists and songs)<br />
@@ -127,12 +125,10 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 - For such high frequency operation and key requests, debouncing the function accurately positions the volume after a certain timeout period [say 50ms]
 - useCallback() allows a memorized function. The function debounces after a period before mounting. [google search engine]
 
-# Next.js + Tailwind CSS Example
-
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
-
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
-
 ## Deploy your own
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+Add all the env variables in 
+
+Replace the redirect url in the spotify api website with the deployed website.
