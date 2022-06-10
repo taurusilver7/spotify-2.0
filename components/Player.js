@@ -86,6 +86,9 @@ function Player() {
         <div>
           <h3>{songInfo?.name}</h3>
           <p>{songInfo?.artist?.[0]?.name}</p>
+          <p className="text-red-500 font-semibold text-xs">
+            Need Premium account to play
+          </p>
         </div>
       </div>
 
@@ -94,7 +97,7 @@ function Player() {
         {/* player buttons */}
         <SwitchHorizontalIcon className="button" />
         <RewindIcon
-          // onClick={() => spotifyApi.skipToPrevious()} //API not working properly
+          onClick={() => spotifyApi.skipToPrevious()} //API not working properly
           className="button"
         />
         {isPlaying ? (
@@ -103,7 +106,7 @@ function Player() {
           <PlayIcon onClick={handlePlayPause} className="button w-10 h-10" />
         )}
         <FastForwardIcon
-          // onClick={() => spotifyApi.skipToNext()} //API not working properly
+          onClick={() => spotifyApi.skipToNext()} //API not working properly
           className="button"
         />
         <ReplyIcon className="button" />
